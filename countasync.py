@@ -5,7 +5,8 @@ app = Quart(__name__)
 
 async def count():
     print("one")
-    await asyncio.sleep(1)
+    await asyncio.sleep(1) 
+    # asyncio.sleep() is used to stand in for a non-blocking call(but one that also takes some time to complete)
     print("Two")
 
 async def main():
